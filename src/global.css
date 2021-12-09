@@ -1,0 +1,62 @@
+/* Variabilisation */
+:root { 
+  --background-color: #B9FAD1;
+  --cadre-color-1: #9ba0ee;
+}
+
+.container {
+  display: flex;
+  flex: 14;
+  flex-direction: row;
+}
+
+.reference {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  background-color: var(--cadre-color-1);
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.pagination {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  background-color: var(--cadre-color-1);
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.central-page {
+  display: flex;
+  flex: 10;
+  background-color: var(--background-color);
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  background-color: var(--cadre-color-1);
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  background-color: var(--cadre-color-1);
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.background {
+  background-color: var(--background-color);
+}

@@ -1,6 +1,10 @@
 <template>
   <div class="background">
-    <Header class="header" v-bind:nameFull="nameFull" v-bind:profession="reference.profession"/>
+    <Header class="header" 
+      v-bind:nameFull="nameFull" 
+      v-bind:profession="reference.profession"
+      v-bind:city="reference.address.city"
+    />
     <div class="container">
       <Reference 
         v-bind:address="reference.address"

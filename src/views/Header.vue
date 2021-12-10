@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>{{ nameFull }}</h1>
-        <h1>{{ profession }}</h1>
+        <h1>{{ profession }} à {{ city }}</h1>
     </div>
 </template>
 
@@ -15,7 +15,11 @@ export default {
         },
         profession: {
           type: String,
-          default: ''            
+          default: ''        
+        },
+        city: {
+          type: String,
+          default: ''          
         }
     }
 }

@@ -3,9 +3,7 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const routes = [
-  { path: '/', redirect: '/hypnotherapeute' }
-]
+const routes = []
 
 const router = new VueRouter({
   mode: 'history',

@@ -1,10 +1,10 @@
 <template>
     <div class="central-page">
+      <h2>{{ titrePage }}</h2>
       <Paragraphe 
         v-for="(paragraphe,index) in listParagraphe" :key="index"
         v-bind:contenu="paragraphe.contenu"
-        v-bind:textColor="paragraphe.textColor"
-        v-bind:fontFamily="paragraphe.fontFamily"
+        v-bind:styleText="paragraphe.styleText"
       />
     </div>
 </template>
@@ -17,7 +17,11 @@ export default {
     Paragraphe
   },
   props: {
-    listParagraphe: {}
+    listParagraphe: {},
+    titrePage: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>

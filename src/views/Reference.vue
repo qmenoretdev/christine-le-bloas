@@ -1,23 +1,42 @@
 <template>
   <div>
-    <h1>{{ reference.firstname }} {{ reference.name }}</h1>
-    <h1>{{ reference.address }}</h1>
-    <h1>{{ reference.phoneNumber }}</h1>
-    <h1>{{ reference.mail }}</h1>
+    <ul class="reference">
+      <li>
+        <a :href="adresseLink" target="_blank">
+        {{ address.numero }} {{ address.street }}
+        <br/>
+        {{ address.postalCode }} {{ address.city }}
+        </a></li>
+      <li>{{ phoneNumber }}</li>
+      <li>{{ mail }}</li>
+    </ul>
   </div>
 </template>
 
 <script>
-import referenceData from '@/data/reference'
 export default {
     name: 'Reference',
+    props: {
+      address: {},
+      phoneNumber: {
+        type: String,
+        default: ''
+      },
+      mail: {
+        type: String,
+        default: ''
+      }
+    },
     computed: {
-      reference() {
-        return referenceData;
+      adresseLink() {
+        const adressFull = this.constructAdress(this.address);
+        return 'https://www.google.ca/maps/place/'+adressFull;
+      }
+    },
+    methods: {
+      constructAdress(address) {
+         return address.numero+' '+address.street+', '+address.postalCode+' '+address.city;
       }
     }
 }
 </script>
-
-<style scoped>
-</style>>

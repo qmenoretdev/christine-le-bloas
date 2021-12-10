@@ -1,23 +1,14 @@
 /* Variabilisation */
-:root { 
+:root {
   --background-color: #B9FAD1;
   --cadre-color-1: #9ba0ee;
+  --active-color: #2b239b;
 }
 
 .container {
   display: flex;
   flex: 14;
   flex-direction: row;
-}
-
-.reference {
-  display: flex;
-  flex: 3;
-  flex-direction: column;
-  background-color: var(--cadre-color-1);
-  border: 2px solid black;
-  padding: 15px;
-  border-radius: 15px;
 }
 
 .pagination {
@@ -35,6 +26,7 @@
   flex: 10;
   background-color: var(--background-color);
   flex-direction: column;
+  min-height: 450px;
 }
 
 .header {
@@ -59,4 +51,43 @@
 
 .background {
   background-color: var(--background-color);
+}
+
+.paragraphe {
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: justify;
+  text-indent: 30px;
+  font-size: large;
+}
+
+.reference {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  background-color: var(--cadre-color-1);
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.reference li {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1200px) {
+  .paragraphe {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-indent: 20px;
+  }
 }

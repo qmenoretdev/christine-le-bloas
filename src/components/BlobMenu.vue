@@ -2,6 +2,7 @@
   <div>
     <ul id="navigation">
       <li
+        v-bind:class="isActive(page.id)"
         v-for="page in listPages"
         :key="page.id"
         @click="changePage(page.id)"
@@ -20,7 +21,10 @@ export default {
   },
   methods: {
     changePage(indexPage) {
-      this.$emit('change-page',indexPage)
+      this.$emit('change-page',indexPage);
+    },
+    isActive(indexPage) {
+      return indexPage === this.$store.getters['getIndexPage'] ? "active" : "not-active" ;
     }
   }
 }
@@ -35,11 +39,26 @@ export default {
 }
 
 #navigation li {
-  background: yellow ;
   padding: 10px;
+  border-radius: 15px;
 }
 
-#navigation li a:hover, .navigation li a:focus, .navigation li a:active {
-  background: #900 ;
+.active {
+  background: #b9f2fa85 ;
+  border: 3px solid var(--active-color);
+  margin-bottom: 8px;
+}
+
+.not-active {
+  background: var(--background-color) ;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+#navigation li:hover, #navigation li:focus {
+  background: #b9f2fa85 ;
+  border: 3px solid black;
+  margin-bottom: 8px;
+  cursor: pointer;
 }
 </style>

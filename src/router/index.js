@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Presentation from '@/views/Presentation'
 import Hypnotherapie from '@/views/Hypnotherapie'
 import Naturotherapie from '@/views/Naturotherapie'
+import PageNotFound from '@/views/PageNotFound'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,10 @@ const routes = [
     name: 'naturotherapie',
     component: Naturotherapie
   },
+  {
+    path: '/*',
+    component: PageNotFound
+  }
 ]
 
 const router = new VueRouter({

@@ -1,0 +1,126 @@
+/* Variabilisation */
+:root {
+  // couleurs
+  --background-color: #B9FAD1;
+  --cadre-color-1: #82d3bb;
+  --active-color: #2b239b;
+
+  // polices
+  --font-classic: Calibri;
+  --font-classic-size: 150%;
+  --font-classic-size-list: 130%;
+  --font-classic-size-min: 110%;
+  --font-citation: Edwardian Script ITC;
+  --font-citation-size: 180%;
+  --font-citation-message-size: 260%;
+
+  // titles
+  --font-title1-size: 220%;
+  --font-title2-size: 170%;
+  --font-title3-size: 150%;
+}
+
+.container {
+  display: flex;
+  flex: 14;
+  flex-direction: row;
+}
+
+.pagination {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  background-color: var(--cadre-color-1);
+  //border: 2px solid black;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.central-page {
+  display: flex;
+  flex: 10;
+  flex-direction: column;
+  min-height: 450px;
+}
+
+.header {
+  display: flex;
+  //background-color: var(--cadre-color-1);
+  background-image: url('assets/img/header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  //border: 2px solid black;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  background-color: var(--cadre-color-1);
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.background {
+  background-color: var(--background-color);
+}
+
+.title-1 {
+  font-weight: bold;
+  font-family: var(--font-classic);
+  font-size: var(--font-title1-size);
+  padding: 10px;
+}
+
+.title-2 {
+  font-weight: bold;
+  font-family: var(--font-classic);
+  font-size: var(--font-title2-size);
+  padding: 5px;
+}
+
+.title-3 {
+  font-weight: bold;
+  font-family: var(--font-classic);
+  font-size: var(--font-title3-size);
+  padding: 2px;
+}
+
+.reference {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  background-color: var(--cadre-color-1);
+ // border: 2px solid black;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+
+  li {
+    padding: 10px;
+    border-radius: 15px;
+    font-family: var(--font-classic);
+    font-size: var(--font-classic-size-min);
+  }
+}
+
+.wip {
+  font-family: var(--font-citation);
+  font-size: var(--font-citation-message-size);
+  font-weight: bold;
+  color: var(--active-color);
+  margin-top: 50px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+}

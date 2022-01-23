@@ -5,11 +5,14 @@
         v-bind:class="isActive(page.id)"
         v-for="page in listPages"
         :key="page.id"
-        @click="changePage(page.id)"
+        @click="changePage(page)"
       >
-        {{ page.nameDisplay }}
+        {{ page.title }}
       </li>
     </ul>
+    <div class="img-container">
+      <img src="@/assets/img/right.jpg">
+    </div>
   </div>
 </template>
 
@@ -36,11 +39,13 @@ export default {
   text-align: center;
   margin: 0;
   padding: 10px;
-}
 
-#navigation li {
-  padding: 10px;
-  border-radius: 15px;
+  li {
+    padding: 10px;
+    border-radius: 15px;
+    font-family: var(--font-classic);
+    font-size: var(--font-classic-size-min);
+  }
 }
 
 .active {
@@ -60,5 +65,22 @@ export default {
   border: 3px solid black;
   margin-bottom: 8px;
   cursor: pointer;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    min-height: 220px;
+    max-height: 220px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 1200px) {
+    img {
+      display: none;
+    }
+  }
 }
 </style>

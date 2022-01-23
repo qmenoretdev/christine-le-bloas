@@ -1,7 +1,9 @@
 <template>
     <div>
-        <h1>{{ nameFull }}</h1>
-        <h1>{{ profession }} à {{ city }}</h1>
+        <div class="header">
+          <div class="title-1">{{ nameFull }}</div>
+          <div class="title-2">{{ profession }}</div>
+        </div>
     </div>
 </template>
 
@@ -16,10 +18,6 @@ export default {
         profession: {
           type: String,
           default: ''        
-        },
-        city: {
-          type: String,
-          default: ''          
         }
     }
 }

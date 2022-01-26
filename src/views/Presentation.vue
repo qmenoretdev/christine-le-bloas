@@ -10,13 +10,13 @@
         <br>
         <div class="title-3">Prises en charge courantes</div>
         <ul id="pathologie">
-            <li>Dépression - Angoisses - Anxiété - Attaques de paniques - Troubles du sommeil - Stress - Manque de confiance en soi</li>
+            <li>Dépression - Angoisses - Anxiété - Attaques de panique - Troubles du sommeil - Stress - Manque de confiance en soi</li>
             <li>Chocs - Thérapie post-traumatique</li>
             <li>Lutte contre la douleur - Préparation préopératoire - Suite d'intervention chirurgicale - Soutien durant les traitements médicaux lourds</li>
-            <li>Maladie de peau : eczema, psoriasis...</li>
+            <li>Maladies de peau : eczéma, psoriasis...</li>
             <li>Phobies</li>
             <li>Allergies</li>
-            <li>Addiction et compulsion</li>
+            <li>Addictions et compulsions</li>
         </ul>
     </div>
 </template>

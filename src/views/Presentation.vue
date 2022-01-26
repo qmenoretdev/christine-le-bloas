@@ -1,8 +1,8 @@
 <template>
     <div>
         <ul id="diplome">
-            <li>Diplomée de l'institut Français d'Hypnose Ericksonienne-Paris</li>
-            <li>Certifiée de la Faculté de Médecine de Paris XIII en Naturothérapie</li>
+            <li><img src="@/assets/img/diploma_32.png"><div>Diplomée de l'institut Français d'Hypnose Ericksonienne-Paris</div></li>
+            <li><img src="@/assets/img/diploma_32.png"><div>Certifiée de la Faculté de Médecine de Paris XIII en Naturothérapie</div></li>
         </ul>
         <br>
         <div class="title-3">Pratiques</div>
@@ -37,8 +37,14 @@ export default {
     text-align: left;
 
     li {
+        display: flex;
+        flex-direction: row;
         font-family: var(--font-classic);
         font-size: var(--font-classic-size);
+
+        img {
+            padding-right: 5px;
+        }
     }
 }
 

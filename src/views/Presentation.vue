@@ -1,18 +1,20 @@
 <template>
     <div>
         <ul id="diplome">
-            <li><img src="@/assets/img/diploma_32.png"><div>Diplomée de l'institut Français d'Hypnose Ericksonienne-Paris</div></li>
-            <li><img src="@/assets/img/diploma_32.png"><div>Certifiée de la Faculté de Médecine de Paris XIII en Naturothérapie</div></li>
+            <li><div>Exerce à Landerneau en tant que Hypnothérapeute & Naturothérapeute depuis 2009</div></li>
+            <li><div>Diplômée de l'Institut Français d'Hypnose Ericksonienne-Paris</div></li>
+            <li><div>Certifiée de la Faculté de Médecine de Paris XIII en Naturothérapie</div></li>
         </ul>
-        <br>
         <div class="title-3">Pratiques</div>
-        <p id="pratique">Hypnose éricksonienne, PNL . Psychothérapie . Relaxation . Nutrition . Aromathérapie . Micro-immunothérapie</p>
-        <br>
+        <ul id="pratique">
+            <li>Hypnose éricksonienne, PNL . Psychothérapie . Relaxation</li>
+            <li>Nutrition . Aromathérapie . Gemmothérapie . Micro-immunothérapie</li>
+        </ul>
         <div class="title-3">Prises en charge courantes</div>
         <ul id="pathologie">
             <li>Dépression - Angoisses - Anxiété - Attaques de panique - Troubles du sommeil - Stress - Manque de confiance en soi</li>
             <li>Chocs - Thérapie post-traumatique</li>
-            <li>Lutte contre la douleur - Préparation préopératoire - Suite d'intervention chirurgicale - Soutien durant les traitements médicaux lourds</li>
+            <li>Lutte contre la douleur - Préparation pré-opératoire - Suite d'intervention chirurgicale - Soutien durant les traitements médicaux lourds</li>
             <li>Maladies de peau : eczéma, psoriasis...</li>
             <li>Phobies</li>
             <li>Allergies</li>
@@ -33,18 +35,13 @@ export default {
     flex-direction: column;
     list-style: none;
     margin: 0;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     text-align: left;
+    margin-bottom: var(--margin-between-paragraphe);
 
     li {
-        display: flex;
-        flex-direction: row;
         font-family: var(--font-classic);
         font-size: var(--font-classic-size);
-
-        img {
-            padding-right: 5px;
-        }
     }
 }
 
@@ -52,9 +49,8 @@ export default {
     display: flex;
     flex-direction: column;
     margin: 0px 15px 0px 15px;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     text-align: left;
-    //list-style: inside;
     
     li {
         font-family: var(--font-classic);
@@ -65,6 +61,21 @@ export default {
 #pratique {
     text-align: center;
     font-family: var(--font-classic);
-    font-size: var(--font-classic-size-list);    
+    font-size: var(--font-classic-size-list);
+    margin-bottom: var(--margin-between-paragraphe);
+    list-style: none;
+}
+
+@media (max-width: 1532px) {
+    #diplome {
+        list-style: square;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 1000px) {
+   #pathologie {
+        padding: 20px;
+   } 
 }
 </style>

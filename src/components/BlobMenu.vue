@@ -10,9 +10,6 @@
         {{ page.title }}
       </li>
     </ul>
-    <div class="img-container">
-      <img src="@/assets/img/right.jpg">
-    </div>
   </div>
 </template>
 

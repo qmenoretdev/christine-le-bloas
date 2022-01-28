@@ -20,6 +20,7 @@
   --font-title3-size: 150%;
 
   // padding
+  --margin-between-paragraphe: 60px;
 }
 
 .container {
@@ -119,6 +120,9 @@
 }
 
 @media (max-width: 640px) {
+  :root {
+    --margin-between-paragraphe: 15px;
+  }
   #app {
     font-size: small;
   }
@@ -128,6 +132,9 @@
 }
 
 @media (max-width: 1000px) {
+  :root {
+    --margin-between-paragraphe: 35px;
+  }
   .container {
     flex-direction: column;
   }

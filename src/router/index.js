@@ -27,10 +27,6 @@ const routes = [
     path: '/naturotherapie',
     name: 'naturotherapie',
     component: Naturotherapie
-  },
-  {
-    path: '/*',
-    component: PageNotFound
   }
 ]
 

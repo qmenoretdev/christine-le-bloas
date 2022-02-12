@@ -1,5 +1,5 @@
 <template>
-  <div class="background">
+  <div>
     <Header 
       v-bind:nameFull="nameFull" 
       v-bind:profession="reference.profession"

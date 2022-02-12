@@ -66,10 +66,6 @@
   margin-top: 10px;
 }
 
-.background {
-  background-color: var(--background-color);
-}
-
 .title-1 {
   font-weight: bold;
   font-family: var(--font-classic);
@@ -137,5 +133,12 @@
   }
   .container {
     flex-direction: column;
+  }
+}
+
+
+@media (min-height: 900px) {
+  .central-page {
+    min-height: 700px;
   }
 }

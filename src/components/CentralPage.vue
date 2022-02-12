@@ -6,13 +6,6 @@
 
 <script>
 export default {
-  name: 'CentralPage',
-  props: {
-    listParagraphe: {},
-    titrePage: {
-      type: String,
-      default: ''
-    }
-  }
+  name: 'CentralPage'
 }
 </script>

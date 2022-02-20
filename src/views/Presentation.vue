@@ -1,7 +1,6 @@
 <template>
     <div>
         <ul id="diplome">
-            <li><div>Exerce à Landerneau en tant que Hypnothérapeute & Naturothérapeute depuis 2009</div></li>
             <li><div>Diplômée de l'Institut Français d'Hypnose Ericksonienne-Paris</div></li>
             <li><div>Certifiée de la Faculté de Médecine de Paris XIII en Naturothérapie</div></li>
         </ul>
@@ -11,6 +10,9 @@
             <li>Nutrition . Aromathérapie . Gemmothérapie . Micro-immunothérapie</li>
         </ul>
         <div class="title-3">Prises en charge courantes</div>
+        <ul id="intro-pathologie">
+            <li><div>J'exerce à Landerneau en tant que Hypnothérapeute & Naturothérapeute depuis 2009.</div></li>
+        </ul>
         <ul id="pathologie">
             <li>Dépression - Angoisses - Anxiété - Attaques de panique - Troubles du sommeil - Stress - Manque de confiance en soi</li>
             <li>Chocs - Thérapie post-traumatique</li>
@@ -45,10 +47,24 @@ export default {
     }
 }
 
+#intro-pathologie {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 15px 15px 0px 15px;
+    text-align: left;
+
+    li {
+        font-family: var(--font-classic);
+        font-size: var(--font-classic-size-list);
+    }
+}
+
 #pathologie {
     display: flex;
     flex-direction: column;
-    margin: 0px 15px 0px 15px;
+    margin: 0px 1px 0px 15px;
     padding: 20px 20px 0px 20px;
     text-align: left;
     
@@ -66,7 +82,7 @@ export default {
     list-style: none;
 }
 
-@media (max-width: 1532px) {
+@media (max-width: 1300px) {
     #diplome {
         list-style: square;
         margin-left: 5px;

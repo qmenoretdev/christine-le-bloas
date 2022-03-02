@@ -3,7 +3,7 @@
     <ul class="reference">
       <li>
         <a :href="adresseLink" target="_blank">
-        {{ address.city }}, {{ address.postalCode }}
+        {{ address.city }} ({{ address.departement }}), {{ address.postalCode }}
         <br/>
         {{ address.numero }} {{ address.street }}
         </a>

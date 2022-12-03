@@ -13,8 +13,9 @@
       <CentralPage />
       <div class="pagination">
           <BlobMenu v-bind:listPages="this.navigation" @change-page="changePage"/>
-      </div>      
+      </div>
     </div>
+    <p class="lastUpdate">Dernière mise à jour : {{ getLastUpdate }}</p>
   </div>
 </template>
 
@@ -42,12 +43,26 @@ export default {
     },
     navigation() {
       return navigation;
+    },
+    getLastUpdate() {
+      var dateLastUpdate = new Date(document.lastModified);
+      return this.formatDate(dateLastUpdate);
     }
   },
   methods: {
     changePage(page) {
       this.$store.dispatch('setIndexPage', page.id);
       this.$router.push(page.path);
+    },
+    padTo2Digits(num) {
+      return num.toString().padStart(2, '0');
+    },
+    formatDate(date) {
+      return [
+        this.padTo2Digits(date.getDate()),
+        this.padTo2Digits(date.getMonth() + 1),
+        date.getFullYear(),
+      ].join('/');
     }
   }
 }

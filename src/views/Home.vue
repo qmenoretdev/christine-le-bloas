@@ -45,24 +45,13 @@ export default {
       return navigation;
     },
     getLastUpdate() {
-      var dateLastUpdate = new Date(document.lastModified);
-      return this.formatDate(dateLastUpdate);
+      return '10/12/2022';
     }
   },
   methods: {
     changePage(page) {
       this.$store.dispatch('setIndexPage', page.id);
       this.$router.push(page.path);
-    },
-    padTo2Digits(num) {
-      return num.toString().padStart(2, '0');
-    },
-    formatDate(date) {
-      return [
-        this.padTo2Digits(date.getDate()),
-        this.padTo2Digits(date.getMonth() + 1),
-        date.getFullYear(),
-      ].join('/');
     }
   }
 }

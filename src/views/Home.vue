@@ -45,7 +45,7 @@ export default {
       return navigation;
     },
     getLastUpdate() {
-      return '10/12/2022';
+      return '08/01/2023';
     }
   },
   methods: {

@@ -12,7 +12,7 @@
       <li>{{ mail }}</li>
     </ul>
     <div class="img-container">
-      <img src="@/assets/img/left.jpg" alt="pont foret">
+      <img src="@/assets/img/left.webp" alt="pont foret">
     </div>
   </div>
 </template>

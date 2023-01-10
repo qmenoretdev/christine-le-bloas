@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://christine-le-bloas-hypnose.netlify.app/sitemap.xml

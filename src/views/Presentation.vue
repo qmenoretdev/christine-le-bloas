@@ -1,8 +1,8 @@
 <template>
     <div>
         <ul id="diplome">
-            <li><div>Diplômée de l'Institut Français d'Hypnose Ericksonienne-Paris</div></li>
-            <li><div>Certifiée de la Faculté de Médecine de Paris XIII en Naturothérapie</div></li>
+            <li><div>Diplômée de l'Institut Français d'<b>Hypnose Ericksonienne-Paris</b></div></li>
+            <li><div>Certifiée de la Faculté de Médecine de Paris XIII en <b>Naturothérapie</b></div></li>
         </ul>
         <div class="title-3">Pratiques</div>
         <ul id="pratique">
@@ -11,7 +11,7 @@
         </ul>
         <div class="title-3">Prises en charge courantes</div>
         <ul id="intro-pathologie">
-            <li><div>J'exerce à Landerneau en tant que Hypnothérapeute & Naturothérapeute depuis 2009.</div></li>
+            <li><div>J'exerce à Landerneau en tant que <b>Hypnothérapeute</b> & <b>Naturothérapeute</b> depuis 2009.</div></li>
         </ul>
         <ul id="pathologie">
             <li>Dépression - Angoisses - Anxiété - Attaques de panique - Troubles du sommeil - Stress - Manque de confiance en soi</li>

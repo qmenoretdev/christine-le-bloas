@@ -4,6 +4,8 @@
   --background-color: #B9FAD1;
   --cadre-color-1: #82d3bb;
   --active-color: #2b239b;
+ // --title-color: #094b37;
+  --title-color: #2b239b;
 
   // polices
   --font-classic: Calibri;
@@ -85,6 +87,7 @@
   font-family: var(--font-classic);
   font-size: var(--font-title3-size);
   padding: 2px;
+  color: var(--title-color);
 }
 
 .reference {
